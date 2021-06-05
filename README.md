@@ -1,3 +1,9 @@
+# What is this?
+
+Hi there, how are you? This is the personal portfolio website of mine. You will get to know about me, my experiences, project i have done and my hobbies. Please feel free to contact me if you have any queries or need any assistance related to tech or anything. Find my contact detailes in the website. Please visit www.diptopauld.me
+
+Let's do something exciting.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
