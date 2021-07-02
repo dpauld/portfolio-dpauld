@@ -2,7 +2,7 @@ import './intro.scss'
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
 
 let introImage = require('../../assets/images/man.png')
-// import myImage from '../../assets/images/man.png'
+// import introImage from '../../assets/images/man.png'
 
 export default function Intro() {
   return (
