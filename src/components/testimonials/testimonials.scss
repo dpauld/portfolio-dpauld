@@ -26,7 +26,16 @@
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      transition: all 1s ease;
 
+      &:nth-child(2) {
+        width: 300px;
+        height: 75%;
+        margin: 0 30px;
+      }
+      &:hover {
+        transform: scale(1.1);
+      }
       .top {
         display: flex;
         align-items: center;

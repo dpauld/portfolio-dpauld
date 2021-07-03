@@ -1,3 +1,4 @@
+/*____Portfolio Data___*/
 export const featuredPortfolio = [
   {
     id: 1,
@@ -160,5 +161,44 @@ export const contentPortfolio = [
     id: 6,
     title: 'Content Banking App',
     img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU',
+  },
+]
+
+/*____Testiomonial Data____*/
+
+export const testimonialData = [
+  {
+    id: 1,
+    name: 'John Doe',
+    designation: 'CEO of ABCD',
+    profileImg:
+      'https://images.pexels.com/photos/937481/pexels-photo-937481.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    commentDesc:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque harum enim culpa quisquam mollitia praesentium totam dolore!',
+    handleIcon: 'assets/youtube.png',
+    handleUrl: 'www.youtube.com/johndoe',
+  },
+  {
+    id: 2,
+    name: 'Tom Durden',
+    designation: 'Senior Developer',
+    profileImg:
+      'https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+    commentDesc:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.',
+    handleIcon: 'assets/twitter.png',
+    handleUrl: 'www.twitter.com/tomdurden',
+  },
+  {
+    id: 2,
+    name: 'Alex Kalinski',
+    designation: 'Co-Founder of DELKA',
+    profileImg:
+      'https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+    handleIcon: 'assets/youtube.png',
+    handleUrl: 'www.youtube.png/alexkalinski',
+    commentDesc:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ',
+    featured: true,
   },
 ]
