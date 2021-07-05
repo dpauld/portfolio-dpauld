@@ -9,13 +9,27 @@
 
   h1 {
     font-size: 50px;
+
+    @include mobile {
+      font-size: 30px;
+    }
   }
   ul {
     margin: 10px;
     padding: 0;
     list-style: none;
     display: flex;
-    // flex-direction: ;
+    /*For horizontal scrolling of the portfolio menu, doesn't work*/
+    // @include mobile {
+    //   overflow-x: scroll;
+    //   overflow-y: hidden;
+    //   white-space: nowrap;
+    // }
+    @include mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px 2px;
+    }
   }
 
   .container {
@@ -26,6 +40,9 @@
     justify-content: center;
     flex-wrap: wrap;
 
+    @include mobile {
+      width: 100%;
+    }
     .item {
       width: 220px;
       height: 150px;
@@ -38,6 +55,11 @@
       align-items: center;
       color: white;
       position: relative;
+
+      @include mobile {
+        width: 130px;
+        height: 100px;
+      }
       h3 {
         position: absolute;
         font-size: 20px;

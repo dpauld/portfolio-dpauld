@@ -1,7 +1,15 @@
+@import '../../global.scss';
+
 #intro {
   // background-color: #546a7b;
   background-color: white;
   display: flex;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .left {
     flex: 0.5;
     overflow: hidden;
@@ -9,15 +17,22 @@
     .intro-img-container {
       width: 700px;
       height: 700px;
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-end; //center in video
       background-color: teal;
       border-radius: 50%;
       float: right;
-
-      .intro-img {
+      display: flex;
+      justify-content: center; //center in video
+      align-items: flex-end;
+      @include mobile {
+        align-items: flex-start;
+      }
+      img {
         height: 90%;
+
+        @include mobile {
+          margin-top: 60px; //extra
+          height: 60%;
+        }
       }
     }
   }
@@ -25,7 +40,7 @@
   .right {
     flex: 0.5;
     // background-color: yellow;
-
+    position: relative;
     .intro-text-container {
       width: 100%;
       height: 100%;
@@ -34,16 +49,30 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+      @include mobile {
+        padding-left: 0;
+        align-items: center;
+      }
       h1 {
-        font-size: 50px;
+        font-size: 60px;
         margin: 10px 0;
+
+        @include mobile {
+          font-size: 40px;
+        }
       }
       h2 {
         font-size: 35px;
       }
       h3 {
         font-size: 30px;
+
+        @include mobile {
+          font-size: 20px;
+        }
         span {
+          font-size: inherit;
           color: teal;
         }
       }
@@ -51,7 +80,7 @@
     a {
       position: absolute;
       bottom: 10px;
-      left: 60%;
+      left: 40%; //40% in video, I tried 60% for dekstop media
 
       .arrow-down {
         width: 60px;

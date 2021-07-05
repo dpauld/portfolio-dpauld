@@ -1,5 +1,5 @@
 import './portfolio.scss'
-import Portfoliolist from './portfoliolist/Portfoliolist'
+import PortfolioCatList from './portfoliocatlist/PortfolioCatList'
 import React, { useEffect, useState } from 'react'
 import { featuredPortfolio, webPortfolio, mobilePortfolio } from '../../data'
 
@@ -45,7 +45,7 @@ export default function Portfolio() {
     },
     {
       id: 'mlsolution',
-      title: 'Machine Learning Solutions',
+      title: 'Machine Learning',
     },
     {
       id: 'robotics',
@@ -58,7 +58,7 @@ export default function Portfolio() {
       <h1>Portfolio</h1>
       <ul>
         {portfolioCatList.map((item, index) => (
-          <Portfoliolist
+          <PortfolioCatList
             catId={item.id}
             catActive={catSelected === item.id}
             y
@@ -66,7 +66,7 @@ export default function Portfolio() {
             key={item.id}
           >
             {item.title}
-          </Portfoliolist>
+          </PortfolioCatList>
         ))}
       </ul>
 
@@ -77,7 +77,6 @@ export default function Portfolio() {
             <h3>{d.title}</h3>
           </div>
         ))}
-
         {/* <div className='item'>
           <img src='https://via.placeholder.com/150' alt=''></img>
           <h3>Real Estate App</h3>

@@ -1,6 +1,6 @@
-import './portfoliolist.scss'
+import './portfoliocatlist.scss'
 
-function Portfoliolist({ catId, catActive, setCatSelected, children }) {
+function PortfolioCatList({ catId, catActive, setCatSelected, children }) {
   return (
     <li
       className={catActive ? 'active' : ''}
@@ -11,4 +11,4 @@ function Portfoliolist({ catId, catActive, setCatSelected, children }) {
   )
 }
 
-export default Portfoliolist
+export default PortfolioCatList
